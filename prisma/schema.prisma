@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String     @id @default(uuid())
+  email       String     @unique
+  username    String
+  password    String
+  champions   Champion[] // 1 user → many champions
+  habitLogs   HabitLog[] // 1 user → many logs
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+}
+
+model Champion {
+  id             String     @id @default(uuid())
+  name           String
+  archetypeClass String     // was: class
+  level          Int        @default(1)
+  xp             Int        @default(0)
+  hp             Int
+  mp             Int
+  str            Int
+  int            Int
+  wis            Int
+  agi            Int
+  dex            Int
+  lck            Int
+  profileImageUrl String
+  spriteImageUrl  String
+  userId         String?    // nullable → system-defined champions have no owner
+  user           User?      @relation(fields: [userId], references: [id])
+  habitLogs      HabitLog[]
+}
+
+model HabitLog {
+  id          String   @id @default(uuid())
+  task        String
+  xpEarned    Int
+  timestamp   DateTime @default(now())
+  userId      String
+  championId  String
+
+  user        User     @relation(fields: [userId], references: [id])
+  champion    Champion @relation(fields: [championId], references: [id])
+}
+
