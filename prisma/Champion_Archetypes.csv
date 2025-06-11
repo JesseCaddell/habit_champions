@@ -1,0 +1,9 @@
+name,theme,hp,mp,str,int,wis,agi,dex,lck,profileImageUrl,spriteImageUrl
+Warrior,Physical Activity,100,30,18,5,4,12,8,5,images/profiles/warrior.png,images/sprites/warrior_idle.gif
+Mind Mage,Mental Health & Focus,60,100,4,18,17,8,6,7,images/profiles/mind_mage.png,images/sprites/mind_mage_idle.gif
+Tooth Sage,Dental Hygiene,75,50,6,10,12,10,15,7,images/profiles/tooth_sage.png,images/sprites/tooth_sage_idle.gif
+Scholar,Learning & Study,65,90,5,20,14,7,9,6,images/profiles/scholar.png,images/sprites/scholar_idle.gif
+Sentinel,Cleaning & Chores,85,45,12,8,10,9,17,6,images/profiles/sentinel.png,images/sprites/sentinel_idle.gif
+Forager,Nutrition & Cooking,80,60,10,10,11,8,14,9,images/profiles/forager.png,images/sprites/forager_idle.gif
+Spirit Monk,Rest & Mindfulness,70,80,6,12,18,10,7,10,images/profiles/spirit_monk.png,images/sprites/spirit_monk_idle.gif
+Merchant,Finance & Productivity,70,50,8,11,9,10,10,20,images/profiles/merchant.png,images/sprites/merchant_idle.gif
