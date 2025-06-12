@@ -37,6 +37,7 @@ model Champion {
   userId         String?    // nullable → system-defined champions have no owner
   user           User?      @relation(fields: [userId], references: [id])
   habitLogs      HabitLog[]
+  streakCount    Int @default(0)
 }
 
 model HabitLog {
