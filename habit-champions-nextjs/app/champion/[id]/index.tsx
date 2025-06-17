@@ -5,7 +5,7 @@ const championData = {
   warrior: {
     name: 'Warrior',
     stats: { str: 18, int: 5, wis: 4, agi: 12, dex: 8, lck: 5 },
-    sprite: require('../../../assets/images/sprites/coming_soon.jpg'),
+    sprite: require('../../../assets/images/sprites/warrior.png'),
     xp: 12, //temp values for demo
     xpMax: 100, //temp values for demo
   },
@@ -42,7 +42,7 @@ const championData = {
   merchant: {
     name: 'Merchant',
     stats: { str: 8, int: 11, wis: 9, agi: 10, dex: 10, lck: 20 },
-    sprite: require('../../../assets/images/sprites/coming_soon.jpg'),
+    sprite: require('../../../assets/images/sprites/merchant.png'),
   },
 };
 

@@ -2,14 +2,14 @@ import { View, Text, FlatList, Image, Pressable, StyleSheet } from 'react-native
 import { Link } from 'expo-router';
 
 const champions = [
-  { id: 'warrior', name: 'Warrior', image: require('../assets/images/profiles/coming_soon.jpg') },
+  { id: 'warrior', name: 'Warrior', image: require('../assets/images/profiles/warriorPortrait.png') },
   { id: 'mind-mage', name: 'Mind Mage', image: require('../assets/images/profiles/coming_soon.jpg') },
   { id: 'tooth-sage', name: 'Tooth Sage', image: require('../assets/images/profiles/toothSagePortrait.png') },
   { id: 'scholar', name: 'Scholar', image: require('../assets/images/profiles/coming_soon.jpg') },
   { id: 'sentinel', name: 'Sentinel', image: require('../assets/images/profiles/coming_soon.jpg') },
   { id: 'forager', name: 'Forager', image: require('../assets/images/profiles/coming_soon.jpg') },
   { id: 'spirit-monk', name: 'Spirit Monk', image: require('../assets/images/profiles/coming_soon.jpg') },
-  { id: 'merchant', name: 'Merchant', image: require('../assets/images/profiles/coming_soon.jpg') },
+  { id: 'merchant', name: 'Merchant', image: require('../assets/images/profiles/merchantPortrait.png') },
 ];
 
 export default function ChampionGrid() {
