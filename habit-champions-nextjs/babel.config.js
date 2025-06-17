@@ -3,11 +3,10 @@ module.exports = function (api) {
   return {
     presets: [
       "babel-preset-expo",
-      "nativewind/babel", // <-- Move this line here!
+      "nativewind/babel", // This should stay here
     ],
     plugins: [
-      require.resolve("expo-router/babel"),
-      // Other plugins go here, but not "nativewind/babel"
+      // Remove: require.resolve("expo-router/babel"), <--- DELETE THIS LINE!
     ],
   };
 };
